@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ne">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sansa International Education Consultancy | Study & Work in Japan</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --japan-red: #bc002d;
+            --dark-blue: #002147;
+            --light-gray: #f4f7f6;
+        }
+        body { font-family: 'Poppins', sans-serif; margin: 0; color: #333; scroll-behavior: smooth; }
+        
+        /* Navigation */
+        header { background: white; padding: 15px 8%; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 2px 10px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 1000; }
+        .logo { font-size: 26px; font-weight: 700; color: var(--japan-red); }
+        nav a { margin-left: 25px; text-decoration: none; color: var(--dark-blue); font-weight: 600; transition: 0.3s; }
+        nav a:hover { color: var(--japan-red); }
+
+        /* Hero Section */
+        .hero { 
+            background: linear-gradient(rgba(0,33,71,0.8), rgba(188,0,45,0.4)), url('https://images.unsplash.com/photo-1524413840807-0c3cb6fa808d?auto=format&fit=crop&w=1350&q=80'); 
+            height: 80vh; background-size: cover; background-position: center;
+            color: white; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 0 20px;
+        }
+        .hero h1 { font-size: 3rem; margin-bottom: 10px; }
+        .hero p { font-size: 1.2rem; max-width: 700px; }
+
+        /* Courses Section */
+        .container { padding: 60px 8%; }
+        .section-title { text-align: center; margin-bottom: 40px; }
+        .section-title h2 { color: var(--dark-blue); font-size: 2.2rem; }
+        .section-title div { width: 80px; height: 4px; background: var(--japan-red); margin: 10px auto; }
+
+        .course-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; }
+        .course-card { background: white; padding: 30px; border-radius: 15px; text-align: center; box-shadow: 0 5px 15px rgba(0,0,0,0.05); border: 1px solid #eee; }
+        .course-card h3 { color: var(--japan-red); font-size: 1.5rem; }
+        .course-card .price { font-weight: bold; color: var(--dark-blue); }
+
+        /* Contact Section */
+        .contact-box { background: var(--light-gray); padding: 50px 8%; display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
+        .info h3 { color: var(--dark-blue); }
+        .btn-call { background: var(--japan-red); color: white; padding: 12px 25px; text-decoration: none; border-radius: 5px; display: inline-block; margin-top: 15px; font-weight: bold; }
+
+        /* WhatsApp Button */
+        .whatsapp-float { position: fixed; bottom: 20px; right: 20px; background: #25d366; color: white; padding: 15px 25px; border-radius: 50px; text-decoration: none; font-weight: bold; box-shadow: 0 4px 10px rgba(0,0,0,0.2); z-index: 1000; }
+
+        footer { background: var(--dark-blue); color: white; text-align: center; padding: 20px; }
+
+        @media (max-width: 768px) {
+            .contact-box { grid-template-columns: 1fr; }
+            .hero h1 { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">SANSA</div>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#courses">Courses</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<div class="hero" id="home">
+    <h1>Sansa International Education Consultancy</h1>
+    <p>जापानमा उज्ज्वल भविष्यको खोजीमा हुनुहुन्छ? N5 देखि N3 सम्मको भाषा तयारी र विश्वसनीय भिसा परामर्शका लागि हामीलाई सम्झनुहोस्।</p>
+    <a href="tel:9843894992" class="btn-call">अहिले नै कल गर्नुहोस्</a>
+</div>
+
+<div class="container" id="courses">
+    <div class="section-title">
+        <h2>Japanese Language Courses</h2>
+        <div></div>
+    </div>
+    <div class="course-grid">
+        <div class="course-card">
+            <h3>N5 Level</h3>
+            <p>आधारभूत भाषा ज्ञान, जापानिज लिपि (Hiragana/Katakana) र सरल व्याकरण।</p>
+            <p class="price">Duration: 6 Months</p>
+        </div>
+        <div class="course-card">
+            <h3>N4 Level</h3>
+            <p>दैनिक जीवनका कुराकानी र उच्च स्तरको व्याकरण तयारी।</p>
+            <p class="price">Duration: 5 Months</p>
+        </div>
+        <div class="course-card">
+            <h3>N3 Level</h3>
+            <p>व्यवसायिक (Working/SSW) भिसाका लागि आवश्यक मध्यम स्तरको तयारी।</p>
+            <p class="price">Duration: 6 Months</p>
+        </div>
+    </div>
+</div>
+
+<div class="contact-box" id="contact">
+    <div class="info">
+        <h3>हाम्रो सम्पर्क विवरण</h3>
+        <p><b>स्थान:</b> नवलपरासी (बर्दघाट सुस्ता पूर्व), भुमही-१२, नेपाल</p>
+        <p><b>फोन:</b> <a href="tel:9843894992">9843894992</a> / <a href="tel:9828297422">9828297422</a></p>
+        <p><b>Email:</b> info@sansainternational.com</p>
+        <p><b>समय:</b> १०:०० बजे - ५:०० बजे सम्म</p>
+    </div>
+    <div class="info">
+        <h3>तपाईंको सपना, हाम्रो साथ</h3>
+        <p>हामी विद्यार्थी भिसा र वर्किङ भिसा दुवैमा परामर्श प्रदान गर्दछौं। जापानको उत्कृष्ट कलेज र कम्पनीहरूसँग हाम्रो सहकार्य रहेको छ।</p>
+    </div>
+</div>
+
+<a href="https://wa.me/9843894992" class="whatsapp-float" target="_blank">WhatsApp Chat 💬</a>
+
+<footer>
+    <p>Sansa International Education Consultancy | नवलपरासी, भुमही-१२</p>
+    <p>&copy; 2024 Sansa International. All rights reserved.</p>
+</footer>
+</body>
+</html>
